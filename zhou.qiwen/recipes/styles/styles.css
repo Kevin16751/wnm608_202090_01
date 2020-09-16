@@ -1,0 +1,50 @@
+body{
+	background-color: #CBE86B;
+	font-family: Arial;
+
+}
+.h1{
+	margin-left: 38%;
+	color:#1C140D;
+	font-size: 40px;
+
+}
+
+.h2{
+	margin-left: 46%;
+	color:#1C140D;
+
+}
+.h3{
+	margin-left: 25%;
+	color:#1C140D;
+
+}
+.h4{
+	margin-left: 25%;
+
+}
+ol{
+	padding-left: 26.5%;
+}
+#name_list{
+	color: #04b4aa;
+}
+ul{
+	margin-left: 24%;
+}
+
+p{
+	line-height: 1.5em;
+	padding:20px;
+	text-align: center;
+
+	margin:15px auto;
+	width: 50%;
+}
+.center{
+	width: 38%;
+	margin:0 auto;
+	margin-left: 33%;
+}
+

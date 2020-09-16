@@ -2,4 +2,5 @@
 
 ## Important Links
 
-- https://zhouqiwen.com/aau/wnm608/zhou.qiwen
+- http://zhouqiwen.com/aau/wnm608/zhou.qiwen
+- http://zhouqiwen.com/aau/wnm608/zhou.qiwen/recipes
