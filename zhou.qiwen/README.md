@@ -6,4 +6,4 @@
 - http://zhouqiwen.com
 - http://zhouqiwen.com/aau/wnm608/zhou.qiwen
 - http://zhouqiwen.com/aau/wnm608/zhou.qiwen/recipes
-- http://zhouqiwen.com/aau/wnm608/zhou.qiwen/module_2
+- http://zhouqiwen.com/aau/wnm608/zhou.qiwen/module_2/module_02.html
