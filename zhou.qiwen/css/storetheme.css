@@ -24,3 +24,8 @@ body {
 	font-size: 3em;
 
 }
+
+[class*='col-' ]>.well {
+	height: 100%;
+}
+

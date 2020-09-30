@@ -128,3 +128,40 @@ a:hover {
   	border-radius: 0.5em;
   	box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
+.card.hard {
+	border-radius: 0.2em;
+	border: 2px solid var(--color-neutral-medium);
+
+}
+
+.card.medium {
+	background-color: var(--color-neutral-medium);
+}
+
+.card.flat {
+	padding: 0;
+}
+
+.well {
+	padding: 0.5em;
+	background-color: var(--color-neutral-light);
+	margin: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
