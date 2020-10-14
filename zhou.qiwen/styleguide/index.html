@@ -20,32 +20,76 @@
 			<div class="flex-none"><h1>Styleguide</h1></div>
 			<nav class="nav flex-none">
 				<ul class="display-flex">
-					<li><a href="#article1">| Link 1</a></li>
-					<li><a href="#article2">Link 2</a></li>
-					<li><a href="#article3">Link 3</a></li>
-					<li><a href="#article4">Link 4</a></li>
+					<li><a href="#article1">| Home</a></li>
+					<li><a href="#article2">Search Cars</a></li>
+					<li><a href="#article3">Trade/Sale</a></li>
+					<li><a href="#article4">Help</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<nav class="toc">
+
+	<nav class="toc container">
 		<div class="card soft">
+			<h2>Table of Contents</h2>
 			<ul>
-				<li><a href="#grid">Grid</a></li>
+				<li><a href="styleguide/#typography">Typography</a></li>
+				<ul>
+					<li><a href="styleguide/#headings"> Headings</a></li>
+				</ul>
+				<ul>
+					<li><a href="styleguide/#paragraphs"> Paragraphs</a></li>
+				</ul>
+				<li><a href="styleguide/#color">Color</a></li>
+				<li><a href="styleguide/#grid">Grid</a></li>
+				<ul>
+					<li><a href="styleguide/#basic-grid"> Basic Grid</a></li>
+				</ul>
+				<li><a href="styleguide/#card">Card</a></li>
 			</ul>
 		</div>
 	</nav>
 
 
+	<div class="container" id="typography">
+	<div class="card soft">
+		<h2>Typography</h2>
+		<h3 id="headings">Headings</h3>
+		<h4 class="well">Code</h4>
+		<code class="well">&lt;h1>Heading 1&lt;/h1>
+&lt;h2>Heading 2&lt;/h2>
+&lt;h3>Heading 3&lt;/h3>
+&lt;h4>Heading 4&lt;/h4>
+&lt;h5>Heading 5&lt;/h5>
+&lt;h6>Heading 6&lt;/h6></code>
 
+		<div class="well">
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>
 
+		
+			
+		
 
+		<h3 id="paragraphs">Paragraphs</h3>
+
+		<div class="well">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Tenetur tempora veritatis tempore quos soluta excepturi deleniti corporis qui dolorum esse officia nisi culpa possimus officiis, ut. Ipsum fuga inventore perferendis deleniti vitae magnam nemo molestiae aliquam quos a, iusto exercitationem rerum ea, laboriosam in modi iure perspiciatis. Molestias, repudiandae architecto.</p>
+			<p>Debitis vitae illum soluta obcaecati quia pariatur, aliquid delectus reiciendis facere ipsam ab provident eum dolorum perspiciatis explicabo asperiores quis! Quod, modi ipsa incidunt quibusdam repudiandae esse, assumenda, architecto vel fugit, quos sequi! Aliquam dolores est inventore repellendus, vero nihil hic natus voluptates necessitatibus ad voluptas cumque deserunt sunt exercitationem.</p>
+			<p>Aliquam ratione sunt molestiae earum cum quaerat at pariatur impedit quasi voluptate, eligendi repellat ullam, nostrum inventore suscipit. Nulla quo, obcaecati libero! Iure, atque cupiditate nulla minima dolores error. Ullam illo sapiente, nobis non consequuntur neque nemo, vero debitis iure in rerum quibusdam accusantium dolorem necessitatibus facere mollitia. Nulla, error!</p>
+		</div>
+	</div>
 
 
 	<div class="container" id="grid">
 		<div class="card soft">
-			<h2>Landing Page</h2>
+			<h2 id=basic-grid>Basic Grid</h2>
 
 			<div class="grid">
 				<div class="col-xs-12 col-md-12">
@@ -59,6 +103,8 @@
 					<div class="col-6"><div class="well">Column 6</div></div>
 				</div>
 			</div>
+
+
 
 			<div class="grid">
 				<div class="col-xs-12 col-md-4">
@@ -201,10 +247,76 @@
 <button class="button button1">Green</button>
 <button class="button button2">Blue</button>
 
-			
 
+
+	<div  class="container">
+		<h2>Forms</h2>
+
+		<div class="soft card">
+			<h3>Basic Input</h3>
+			<form>
+				<input type="text">
+				<input type="number">
+				<input type="search">
+				<input type="password">
+				
+			</form>
+		</div>
+	</div>
 		</div>
 		
+	</div>
+
+
+	<div class="container">
+		<h2 id="card">Card</h2>
+		<div class="card soft">
+			<div class="well">
+				<h3>Basic Card</h3>
+				<div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit at, error ut illum, eveniet quis accusantium repellat, fugiat saepe quos officiis sequi libero aspernatur eligendi consequuntur praesentium quibusdam quod voluptate.</div>
+
+				<h3>Soft Card</h3>
+				<div class="card soft">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit at, error ut illum, eveniet quis accusantium repellat, fugiat saepe quos officiis sequi libero aspernatur eligendi consequuntur praesentium quibusdam quod voluptate.</div>
+
+				<h3>Hard Card</h3>
+				<div class="card hard">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit at, error ut illum, eveniet quis accusantium repellat, fugiat saepe quos officiis sequi libero aspernatur eligendi consequuntur praesentium quibusdam quod voluptate.</div>
+
+				<h3>Medium Card</h3>
+				<div class="card medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit at, error ut illum, eveniet quis accusantium repellat, fugiat saepe quos officiis sequi libero aspernatur eligendi consequuntur praesentium quibusdam quod voluptate.</div>
+
+				<h3>Dark Card</h3>
+				<div class="card dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit at, error ut illum, eveniet quis accusantium repellat, fugiat saepe quos officiis sequi libero aspernatur eligendi consequuntur praesentium quibusdam quod voluptate.</div>
+
+				<h3>Rainbow Card</h3>
+				<div class="card rainbow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit at, error ut illum, eveniet quis accusantium repellat, fugiat saepe quos officiis sequi libero aspernatur eligendi consequuntur praesentium quibusdam quod voluptate.</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h2>View Window</h2>
+
+		<div class="view-window" style="background-image: url(img/car_001.jpg)"></div>
+	</div>
+
+
+
+	<div class="container" id="navigations">
+		<h2>Navigations</h2>
+
+		<div class="card soft">
+			<h3>Basic Nav</h3>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 
 

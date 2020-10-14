@@ -30,7 +30,7 @@
 .col-12 { grid-column: span 12; }
 
 /* exrea small*/
-@media （min-width：0） {
+@media (min-width:0) {
 	.col-xs-1 { grid-column: span 1; }
 	.col-xs-2 { grid-column: span 2; }
 	.col-xs-3 { grid-column: span 3; }
@@ -46,7 +46,7 @@
 }
 
 /*  small*/
-@media （min-width：350px） {
+@media (min-width:350px) {
 	.col-sm-1 { grid-column: span 1; }
 	.col-sm-2 { grid-column: span 2; }
 	.col-sm-3 { grid-column: span 3; }
@@ -62,7 +62,7 @@
 }
 
 /* medium*/
-@media （min-width：600px） {
+@media (min-width:600px) {
 	.col-md-1 { grid-column: span 1; }
 	.col-md-2 { grid-column: span 2; }
 	.col-md-3 { grid-column: span 3; }
@@ -78,7 +78,7 @@
 }
 
 /* large*/
-@media （min-width：900px） {
+@media (min-width:900px) {
 	.col-lg-1 { grid-column: span 1; }
 	.col-lg-2 { grid-column: span 2; }
 	.col-lg-3 { grid-column: span 3; }
@@ -94,7 +94,7 @@
 }
 
 /* extra large*/
-@media （min-width：1200px） {
+@media (min-width:1200px) {
 	.col-xl-1 { grid-column: span 1; }
 	.col-xl-2 { grid-column: span 2; }
 	.col-xl-3 { grid-column: span 3; }
@@ -110,4 +110,26 @@
 }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
