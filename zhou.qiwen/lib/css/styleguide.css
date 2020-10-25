@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Georgia,Cambira, "Times New Roman", serif;
+	font-family: Newson Bold, sans-serif;
 }
 
 a{
@@ -97,6 +97,35 @@ code {
 		background-color: var(--color-main-medium);
 		color: var(--color-white);
 		text-decoration: none;
+	}
+	.nav.crumbs ul
+	.nav.pills ul,
+	.nav.stretch ul,
+	.nav.flex ul {
+		display:flex;
+	}
+
+	.nav.stretch li {
+		flex:1 1 auto;
+		text-align: center;
+	}
+
+	.nav.pills a {
+		border-radius:2em;
+		padding: 0.5em 1em;
+	}
+
+	.nav.crumbs a {
+		display: inline-block;
+	}
+	.nav.crumbs a:hover {
+		background-color: transparent;
+		color: inherit;
+		text-decoration: underline;
+	}
+	.nav.crumbs li:not(:first-child)::before {
+		content: '/';
+		font-family: Newson;
 	}
 
 
@@ -211,6 +240,26 @@ code {
   background-color: #008CBA;
   color: white;
 }
+
+
+
+
+/*Table*/
+.table{
+	width:100%;
+	border-collapse: collapse;
+}
+.table td,
+.table th {
+	text-align: left;
+	padding: 0.2em 0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+	background-color: var(--color-main-light);
+
+}
+
 
 
 

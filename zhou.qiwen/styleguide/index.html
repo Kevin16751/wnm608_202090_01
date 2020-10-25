@@ -20,7 +20,7 @@
 			<div class="flex-none"><h1>Styleguide</h1></div>
 			<nav class="nav flex-none">
 				<ul class="display-flex">
-					<li><a href="#article1">| Home</a></li>
+					<li><a href="#article1">Home</a></li>
 					<li><a href="#article2">Search Cars</a></li>
 					<li><a href="#article3">Trade/Sale</a></li>
 					<li><a href="#article4">Help</a></li>
@@ -47,6 +47,8 @@
 					<li><a href="styleguide/#basic-grid"> Basic Grid</a></li>
 				</ul>
 				<li><a href="styleguide/#card">Card</a></li>
+				<li><a href="styleguide/#navigations">Navigations</a></li>
+				<li><a href="styleguide/#tables">Tables</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -89,74 +91,7 @@
 
 	<div class="container" id="grid">
 		<div class="card soft">
-			<h2 id=basic-grid>Basic Grid</h2>
-
-			<div class="grid">
-				<div class="col-xs-12 col-md-12">
-					<div class="col-12"><div class="well">Column 12</div></div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<div class="col-xs-12 col-md-6">
-					<div class="col-6"><div class="well">Column 6</div></div>
-					<div class="col-6"><div class="well">Column 6</div></div>
-				</div>
-			</div>
-
-
-
-			<div class="grid">
-				<div class="col-xs-12 col-md-4">
-					<div class="col-4"><div class="well">Column 4</div></div>
-					<div class="col-4"><div class="well">Column 4</div></div>
-					<div class="col-4"><div class="well">Column 4</div></div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<div class="col-xs-12 col-md-3">
-					<div class="col-3"><div class="well">Column 3</div></div>
-					<div class="col-3"><div class="well">Column 3</div></div>
-					<div class="col-3"><div class="well">Column 3</div></div>
-					<div class="col-3"><div class="well">Column 3</div></div>
-				</div>
-			</div>
-
-			<h2>Products Page</h2>
-
-			<div class="grid">
-				<div class="col-12"><div class="well">Column 12</div></div>
-			</div>
-
-			<div class="grid">
-				<div class="col-xs-12 col-md-2">
-					<div class="col-2"><div class="well">Column 2</div></div>
-					<div class="col-2"><div class="well">Column 2</div></div>
-					<div class="col-2"><div class="well">Column 2</div></div>
-					<div class="col-2"><div class="well">Column 2</div></div>
-					<div class="col-2"><div class="well">Column 2</div></div>
-					<div class="col-2"><div class="well">Column 2</div></div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<div class="col-xs-12 col-md-4">
-					<div class="col-4"><div class="well">Column 4</div></div>
-					<div class="col-4"><div class="well">Column 4</div></div>
-					<div class="col-4"><div class="well">Column 4</div></div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<div class="col-xs-12 col-md-3">
-					<div class="col-3"><div class="well">Column 3</div></div>
-					<div class="col-3"><div class="well">Column 3</div></div>
-					<div class="col-3"><div class="well">Column 3</div></div>
-					<div class="col-3"><div class="well">Column 3</div></div>
-				</div>
-			</div>
-
+			
 			<h2>Single Products Page</h2>
 
 			<div class="grid">
@@ -305,18 +240,95 @@
 	<div class="container" id="navigations">
 		<h2>Navigations</h2>
 
+		<script>
+		const makeNav = (classes='') =>{ 
+			const links = ['home','store','about','cart'];
+			document.write(`
+				<div>
+				<nav class="${classes}">
+				<ul>
+					${links.reduce((r,o,i)=>r+`<li><a href="#">${o}</a></li>`,'')}
+					
+				</ul>
+			</nav>
+				</div>
+				`)
+		}
+		</script>
+
 		<div class="card soft">
 			<h3>Basic Nav</h3>
 
-			<nav class="nav">
+			<!-- <nav class="nav">
 				<ul>
 					<li><a href="#">Link 1</a></li>
 					<li><a href="#">Link 2</a></li>
 					<li><a href="#">Link 3</a></li>
 					<li><a href="#">Link 4</a></li>
 				</ul>
-			</nav>
+			</nav> -->
+			<script>makeNav('nav')</script>
 		</div>
+		<div class="card soft">
+			<h3>Flex Nav</h3>
+			<script>makeNav('nav flex')</script>
+			
+		</div>
+		<div class="card soft">
+			<h3>Stretch Nav</h3>
+			<script>makeNav('nav stretch')</script>
+			
+		</div>
+		<div class="card soft">
+			<h3>Pills Nav</h3>
+			<script>makeNav('nav pills')</script>
+			
+		</div>
+		<div class="card soft">
+			<h3>Breadcrumb Nav</h3>
+			<script>makeNav('nav crumbs')</script>
+			
+		</div>
+	</div>
+
+
+	<script>
+		const makeTable = (classes='') => {
+			const head = ['ID','Office','Name','Phone'];
+			const body = [
+				['001',"Abc",'Abc@gmail.com','000-0012'],
+				['002',"Abe",'Abe@gmail.com','000-0013'],
+				['003',"Abd",'Abd@gmail.com','000-0014'],
+				['004',"Abg",'Abg@gmail.com','000-0015'],
+				['005',"Abo",'Abo@gmail.com','000-0016'],
+			];
+
+			document.write(`
+			<table class="${classes}">
+				<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+				<tbody>
+					${body.reduce((r,o,i)=>r+`<tr>${[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')}</tr>`,'')}
+				</tbody>
+			</table>
+			`)
+		}
+	</script>
+	<div class="caontainer" id="tables">
+		<h2>Tables</h2>
+
+		<div class="card soft">
+			<h3>Basic Table</h3>
+
+			<script>makeTable(`table`)</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Table</h3>
+
+			<script>makeTable(`table striped`)</script>
+		</div>
+
+		
 	</div>
 
 
