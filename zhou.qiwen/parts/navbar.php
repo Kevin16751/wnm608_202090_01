@@ -9,7 +9,7 @@
             <li><a href="./index.php">Home</a></li>
             <li><a href="./products.php">Search Cars</a></li>
             <li><a href="./index.php">Trade/Sale</a></li>
-			<li><a href="./index.php">Help</a></li>
+   			<li><a href="./index.php">Help</a></li>
          </ul>
       </nav>
    </div>
