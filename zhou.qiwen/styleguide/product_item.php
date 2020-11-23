@@ -15,7 +15,7 @@
          <h2>Product Item</h2>
 
          <div>This is the product #<?= $_GET['id'] ?></div>
-         <?php include "../parts/single product.php" ?>
+         <?php include "../parts/product_item.php" ?>
       </div>
    </div>
 
