@@ -3,7 +3,7 @@
 <head>
    <title>Product Checkout</title>
 
-   <?php include "../parts/meta.php" ?>
+   <?php include "parts/meta.php" ?>
 </head>
 <body>
    
@@ -21,7 +21,7 @@
       </div>
    </div>
 
-   <?php include "../parts/footer.php" ?>
+   <?php include "parts/footer.php" ?>
 
 </body>
 </html>
