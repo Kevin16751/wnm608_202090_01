@@ -14,7 +14,7 @@
       <div class="card soft">
          <h2>Product Checkout</h2>
 
-         <a href="./">Cancel</a>
+         <a href="index.php">Cancel</a>
 
          <div>Fill in your information</div>
          <div><a href="product_confirmation.php">Pay</a></div>

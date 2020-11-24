@@ -12,7 +12,7 @@
    <div class="container">
       <div class="card soft">
          <h2>Thanks for purchasing.</h2>
-         <a href="./">Continue shopping</a>
+         <a href="index.php">Continue shopping</a>
          
       </div>
    </div>

@@ -10,6 +10,7 @@
             <li><a href="product_list.php">Search Cars</a></li>
             <li><a href="index.php">Trade/Sale</a></li>
    			<li><a href="index.php">Help</a></li>
+            <li><a href="product_cart.php">Cart</a></li>
          </ul>
       </nav>
    </div>
