@@ -16,7 +16,7 @@ include_once "../lib/php/functions.php";
 
 
 
-   <div class="view-window" style="background-image:url(img/car_001.jpg)">
+   <div class="view-window" style="background-image:url(../img/car_001.jpg)">
       <h2>Product Name</h2>
    </div>
    <div class="container">

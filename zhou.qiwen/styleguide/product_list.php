@@ -1,7 +1,7 @@
 <?php
 
-include_once "lib/php/functions.php";
-include_once "parts/templates.php";
+include_once "../lib/php/functions.php";
+include_once "../parts/templates.php";
 
 
 
@@ -12,11 +12,11 @@ include_once "parts/templates.php";
 <head>
    <title>Product List</title>
 
-   <?php include "parts/meta.php" ?>
+   <?php include "../parts/meta.php" ?>
 </head>
 <body>
    
-   <?php include "parts/navbar.php" ?>
+   <?php include "../parts/navbar.php" ?>
 
    <div class="container">
 	   <div class="card soft">
@@ -38,7 +38,7 @@ include_once "parts/templates.php";
 	   </div>
    </div>
 
-   <?php include "parts/footer.php" ?>
+   <?php include "../parts/footer.php" ?>
 
    
 

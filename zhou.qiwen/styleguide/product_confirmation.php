@@ -3,7 +3,7 @@
 <head>
    <title>Thanks for purchasing.</title>
 
-   <?php include "parts/meta.php" ?>
+   <?php include "../parts/meta.php" ?>
 </head>
 <body>
    
