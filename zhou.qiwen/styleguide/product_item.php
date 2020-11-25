@@ -14,7 +14,9 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Product Item</title>
+   <title>Store: <?= $product->title ?></title>
+
+
 
    <?php include "../parts/meta.php" ?>
 </head>
@@ -28,7 +30,23 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
          <h2>Product Item</h2>
 
          <div>This is the product #<?= $_GET['id'] ?></div>
-         <!-- <?php include "parts/product_item.php" ?> -->
+
+         <h2>Subaru 2019</h2>
+         <div class="grid gap">
+            <?php
+
+               echo array_reduce(
+                  MYSQLIQuery("
+                     SELECT *
+                     FROM products
+                     WHERE id in (4,6,8)
+                  "),
+                  'makeProductList'
+               );
+
+            ?>
+         </div>
+         
       </div>
    </div>
 
