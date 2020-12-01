@@ -14,7 +14,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Store: <?= $product->title ?></title>
+   <title>Search Cars: <?= $product->title ?></title>
 
 
 
