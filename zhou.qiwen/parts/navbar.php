@@ -1,5 +1,6 @@
 <header class="navbar">
    <div class="container display-flex flex-align-center">
+      <img class="logo" src="../img/logo_carheaven.png">
       <div class="flex-none"><h1>CarHeaven</h1></div>
       <div class="flex-stretch"></div>
       
@@ -8,12 +9,14 @@
          <ul class="display-flex">
             <li><a href="index.php">Home</a></li>
             <li><a href="product_list.php">Search Cars</a></li>
-            <li><a href="index.php">Trade/Sale</a></li>
-   			<li><a href="index.php">Help</a></li>
+            
+   			<li><a href="index.php">About</a></li>
             <li><a href="product_cart.php">Cart</a></li>
          </ul>
       </nav>
    </div>
+
+   
 </header>
 
 
