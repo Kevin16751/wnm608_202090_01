@@ -1,6 +1,6 @@
 <header class="navbar">
    <div class="container display-flex flex-align-center">
-      <img class="logo" src="../img/logo_carheaven.png">
+      <img class="logo" src="img/logo_carheaven.png">
       <div class="flex-none"><h1>CarHeaven</h1></div>
       <div class="flex-stretch"></div>
       

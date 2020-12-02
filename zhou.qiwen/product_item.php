@@ -1,14 +1,14 @@
 <?php
 
-include_once "../lib/php/functions.php";
-include_once "../parts/templates.php";
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $product = MYSQLIQuery("SELECT * FROM products WHERE id = {$_GET['id']}")[0];
 
 $thumbs = explode(",",$product->image_other);
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/images/store/$o'>";
+   return $r."<img src='$o'>";
 });
 
 ?><!DOCTYPE html>
@@ -18,11 +18,11 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 
 
 
-   <?php include "../parts/meta.php" ?>
+   <?php include "parts/meta.php" ?>
 </head>
 <body>
    
-   <?php include "../parts/navbar.php" ?>
+   <?php include "parts/navbar.php" ?>
 
 
    <div class="container">
@@ -50,7 +50,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       </div>
    </div>
 
-   <?php include "../parts/footer.php" ?>
+   <?php include "parts/footer.php" ?>
 
 </body>
 </html>

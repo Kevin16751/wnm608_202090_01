@@ -1,6 +1,6 @@
 <?php
 
-include_once "../lib/php/functions.php";
+include_once "lib/php/functions.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -8,15 +8,15 @@ include_once "../lib/php/functions.php";
    <title>Home</title>
    
 
-   <?php include "../parts/meta.php" ?>
+   <?php include "parts/meta.php" ?>
 </head>
 <body>
    
-   <?php include "../parts/navbar.php" ?>
+   <?php include "parts/navbar.php" ?>
 
 
 
-   <div class="view-window" style="background-image:url(../img/car_001.jpg)">
+   <div class="view-window" style="background-image:url(img/car_001.jpg)">
       <h2>FIND BEST OPTION</h2>
          <h3>Get pre-qualified to see personalized financing terms on over 62,000 vehicles.</h3>
       
