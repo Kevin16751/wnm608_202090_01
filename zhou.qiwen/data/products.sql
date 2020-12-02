@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 09, 2020 at 01:56 AM
+-- Generation Time: Dec 02, 2020 at 12:42 PM
 -- Server version: 5.6.49-cll-lve
 -- PHP Version: 7.3.6
 
@@ -25,14 +25,12 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `test`
+-- Table structure for table `products`
 --
 
-CREATE TABLE `test` (
+CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `name` varchar(64) NOT NULL,
-  `email` varchar(128) NOT NULL,
-  `url` varchar(256) NOT NULL,
   `price` decimal(9,2) NOT NULL,
   `date_create` datetime NOT NULL,
   `date_modify` datetime NOT NULL,
@@ -41,25 +39,36 @@ CREATE TABLE `test` (
   `image_other` varchar(512) NOT NULL,
   `image_thumb` varchar(256) NOT NULL,
   `description` text NOT NULL,
-  `miles` decimal(9,2) NOT NULL
+  `miles` varchar(64) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `test`
+-- Dumping data for table `products`
 --
 
-INSERT INTO `test` (`id`, `name`, `email`, `url`, `price`, `date_create`, `date_modify`, `category`, `image_main`, `image_other`, `image_thumb`, `description`, `miles`) VALUES
-(1, 'Honda', 'zhouqiwen19801@gmail.com', 'http://Honda.com', 56789.18, '2020-11-09 01:36:16', '2020-11-09 01:36:16', 'car', 'car_Honda_main.jpg', 'car_Honda_1.jpg, car_Honda_2.jpg, car_Honda_3.jpg', 'car_Honda_t.jpg', 'The one the most comfortable car.', 0.00),
-(2, 'BMW', 'zhouqiwen19801@gmail.com', 'http://bmw.com', 10000.12, '2020-11-09 01:53:03', '2020-11-09 01:53:03', 'car', 'car_BMW_main.jpg', 'car_BMW_1.jpg, car_BMW_2.jpg, car_BMW_3.jpg,', 'car_BMW_t.jpg', 'Great car.', 56780.43);
+INSERT INTO `products` (`id`, `name`, `price`, `date_create`, `date_modify`, `category`, `image_main`, `image_other`, `image_thumb`, `description`, `miles`) VALUES
+(17, 'SUBARU', 12345.00, '2020-12-02 00:20:25', '2020-12-02 00:20:25', 'CAR', 'img/subaru_m.jpg', 'img/subaru_1.jpg, img/subaru_2.jpg', 'img/subaru_2.jpg', 'This is the best car in the world.', '12,675miles'),
+(15, 'BMW', 13243.00, '2020-12-02 00:20:25', '2020-12-02 00:20:25', 'CAR', 'img/bmw_1.jpg', 'img/bmw_1.jpg', 'img/bmw_1.jpg', 'This is the best car in the world.', '76,345miles'),
+(16, 'NISSAN', 12345.00, '2020-12-02 00:20:25', '2020-12-02 00:20:25', 'CAR', 'img/nissanblue_m.jpg', 'img/nissanblue_m.jpg', 'img/nissanblue_m.jpg', 'This is the best car in the world.', '12,234miles'),
+(5, 'FIAT', 100000.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'car', 'img/fiat_m.jpg', 'img/fiat_m.jpg', 'img/fiat_m.jpg', 'The best car in the world.', '34,567miles'),
+(6, 'HONDA', 1233445.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'CAR', 'img/hondablack_m.jpg', 'img/hondablack_m.jpg', 'img/hondablack_m.jpg', 'This is the best car in the world.', '56,777miles'),
+(7, 'HONDA', 7678876.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'CAR', 'img/hondagrey_m.jpg', 'img/hondagrey_m.jpg', 'img/hondagrey_m.jpg', 'This is the best car in the world.', '87,986miles'),
+(8, 'HONDA', 654332.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'CAR', 'img/hondawhite_m.jpg', 'img/hondawhite_m.jpg', 'img/hondawhite_m.jpg', 'This is the best car in the world.', '89,765miles'),
+(9, 'HYUNDAI', 12695.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'car', 'img/hyundai_m.jpg', 'img/hyundai_m.jpg', 'img/hyundai_m.jpg', 'This is the best car in the world.', '76,987miles'),
+(10, 'LEXUS', 1223455.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'car', 'img/lexus_m.jpg', 'img/lexus_m.jpg', 'img/lexus_m.jpg', 'This is the best car in the world.', '56,987miles'),
+(11, 'LEXUS', 123445.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'CAR', 'img/lexusblack_m.jpg', 'img/lexusblack_m.jpg', 'img/lexusblack_m.jpg', 'This is the best car in the world.', '76,875miles'),
+(12, 'MINI', 234556.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'CAR', 'img/mini_m.jpg', 'img/mini_m.jpg', 'img/mini_m.jpg', 'This is the best car in the world.', ''),
+(13, 'NISSAN', 9999999.99, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'car', 'img/nissan_m.jpg', 'img/nissan_m.jpg', 'img/nissan_m.jpg', 'This is the best car in the world.', '12,564miles'),
+(14, 'VOLKSWAGEN', 1234556.00, '2020-12-02 00:09:06', '2020-12-02 00:09:06', 'CAR', 'img/volkswagen_m.jpg', 'img/volkswagen_m.jpg', 'img/volkswagen_m.jpg', 'This is the best car in the world.', '12,567miles');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `test`
+-- Indexes for table `products`
 --
-ALTER TABLE `test`
+ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -67,10 +76,10 @@ ALTER TABLE `test`
 --
 
 --
--- AUTO_INCREMENT for table `test`
+-- AUTO_INCREMENT for table `products`
 --
-ALTER TABLE `test`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `products`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
