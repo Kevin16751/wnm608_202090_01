@@ -54,9 +54,9 @@ code {
 
 
 
-/* Layout Class */
+/* Container */
 .container {
-	max-width:1000px;
+	max-width:1180px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -79,12 +79,13 @@ code {
 
 
 
-/* component classes */
+/* Navbar */
 .nav ul {
 	list-style-type: none;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0em;
+	margin-left: 20px;
 
 }
 
@@ -144,13 +145,19 @@ code {
 	padding: 0 0.5em;
 }
 
+.logo {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+
+}
 
 
 
 
 
-
-
+/*view-window*/
 .view-window{
 	position: relative;
 	overflow: hidden;
@@ -162,7 +169,7 @@ code {
 }
 
 
-
+/*card*/
 .card {
 	background-color: var(--color-white);
 	padding: 1em;
@@ -205,7 +212,7 @@ code {
 }
 
 
-
+/*button*/
 .button {
   border: none;
   color: white;
@@ -273,6 +280,8 @@ code {
 	border: 1px solid var( --color-main-light);
 }
 
+
+
 /*Forms*/
 .from-input {
 	display: inline-block;
@@ -285,51 +294,163 @@ code {
 	outline: 0;
 }
 
-
-/* products list */
-
-.products-list img {
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-	margin-bottom: 18px;
+.form-control {
+    margin: 1em 0;
+}
+.form-label {
+    font-size: 0.8em;
+    color: var(--color-neutral-medium);
 }
 
-.products-list .products-card {
-	padding: 16px;
-	background-color: var(--color-white);
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-	border-radius: 2px;
-	margin-bottom: 18px;
+.btn,
+.form-button {
+    display: inline-block;
+    width: 100%;
+    border-width: 0;
+    font: inherit;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    background-color: var(--color-neutral-light);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance:none;
+}
+.btn:hover,
+.form-button:hover {
+   text-decoration:none;
 }
 
-.product-list .product-title {
-	font-size: 10px;
-	font-weight: 72;
-	margin-bottom: 6px;
+   .form-button.inline,
+   .btn.inline {
+      width:initial;
+   }
+
+   .btn.sell {
+      background-color:var(--color-purchase);
+   }
+
+
+
+/*hotdog*/
+.hotdog.stack,
+.hotdog {
+   display: inline-flex;
+   width: 100%;
+    /*line-height: 3rem; */
+   font: inherit;
+   background-color: var(--color-neutral-light);
+   padding: 0.5em 1.5em;
+   border-radius: 2em;
+   border-width:0;
+   outline:0;
+}
+   .hotdog.dark {
+      background-color: var(--color-neutral-dark);
+      color: var(--color-neutral-light);
+   }
+
+   .hotdog.stack button,
+   .hotdog.stack input,
+   .hotdog input {
+      background-color:transparent;
+      border-width:0;
+      flex:1 1 100%;
+      outline:0;
+      font:inherit;
+   }
+
+   .hotdog.stack {
+      padding:0;
+   }
+   .hotdog.stack input {
+      padding:0.5em 1.5em;
+   }
+   .hotdog.stack button {
+      background-color:white;
+      padding:0.5em 1.5em;
+      flex: none;
+   }
+   .hotdog.stack>:first-child {
+      border-radius: 2em 0 0 2em;
+   }
+   .hotdog.stack>:last-child {
+      border-radius: 0 2em 2em 0;
+   }
+
+
+
+
+/*forms*/
+.form-select>select {
+    padding: 0.5em 1em;
+    background-color: var(--color-neutral-light);
+    border-width: 0;
+    border-radius: 0.3em;
+    cursor: pointer;
+    -webkit-appearance:none;
+    display:inline-block;
+    width:100%;
+    font:inherit;
+    outline:0;
+}
+.form-select {
+   position:relative;
+}
+.form-select::after {
+   position:absolute;
+   content:'▼';
+   font-family:Arial,sans-serif;
+   font-size:0.9em;
+   top:50%;
+   transform:translateY(-50%);
+   right:0.3rem;
+   pointer-events:none;
+   color:var(--color-neutral-medium);
 }
 
-.product-list .product-price {
-	font-size: 16px;
-	padding: 0;
-	margin-bottom: 24px;
+
+
+
+
+
+
+
+.icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: text-bottom;
 }
 
-.product-list .btn-more-info {
-	display: block;
-	max-width: 160px;
-	height: 40px;
-	font-size: 18px;
-	line-height: 40px;
-	cursor: pointer;
-	background-color: var(--color-main-medium);
-	text-align: center;
-	color: var(--color-white);
-	border-radius: 4px;
-}
 
-.btn-more-info {
-	margin: auto;
+
+
+/* TOGGLE */
+.toggle label {
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    background-color: var(--color-neutral-light);
+    border: 0.1em solid var(--color-neutral-medium);
+    border-radius: 1em;
+    position: relative;
+    font-size: 1.3em;
+}
+.toggle label::after {
+   content:'';
+   position:absolute;
+   width:0.8em;
+   height:0.8em;
+   display:inline-block;
+   border-radius:1em;
+   background-color:var(--color-white);
+   transition:all 0.3s;
+   box-shadow:0 0 2px rgba(0,0,0,0.4);
+}
+.toggle input:checked + label::after {
+   transform:translateX(1em);
 }
 
 
