@@ -15,6 +15,8 @@
 	--color-white:#fff;
 	--color-black:#000;
 
+  --color-form-input:#F4F8FA;
+
 	--header-height:3rem;
 
 }
@@ -22,7 +24,7 @@
 body{
 	margin: 0;
 	font-size: 100%;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Newson regular, sans-serif;
 }
 
 h1,
@@ -33,6 +35,7 @@ h5,
 h6 {
 	font-family: Newson Bold, sans-serif;
 }
+
 
 a{
 	text-decoration: none;
@@ -56,7 +59,7 @@ code {
 
 /* Container */
 .container {
-	max-width:1180px;
+	max-width:1300px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -165,8 +168,9 @@ code {
 	background-position:center;
 	background-attachment: fixed;
 
-	height: 70vh;
+	height: 80vh;
 }
+
 
 
 /*card*/
@@ -183,6 +187,7 @@ code {
   	border-radius: 0.5em;
   	box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
+
 .card.hard {
 	border-radius: 0.2em;
 	border: 2px solid var(--color-neutral-medium);
@@ -205,6 +210,13 @@ code {
 	padding: 0;
 }
 
+.card-section~.card-section {
+  border-top:1px solid var(--color-main-medium);
+}
+.card-section {
+  padding:1em;
+}
+
 .well {
 	padding: 0.5em;
 	background-color: var(--color-main-light);
@@ -216,11 +228,11 @@ code {
 .button {
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 16px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -245,6 +257,20 @@ code {
 
 .button2:hover {
   background-color: #008CBA;
+  color: white;
+}
+
+.top_button {
+  background-color:grey;
+  width: 46px;
+  height: 46px;
+  color: white;
+  position: sticky;
+  left: 10px;
+  
+}
+.top_button:hover {
+  background-color: #004482;
   color: white;
 }
 
@@ -283,14 +309,14 @@ code {
 
 
 /*Forms*/
-.from-input {
+.form-input {
 	display: inline-block;
 	width:100%;
 	border-width: 0;
 	background-color: transparent;
 	font:inherit;
 	padding:0.5em 1em;
-	border-bottom: 1px solid var(--color-main-light);
+	border-bottom: 1px solid var(--color-form-input);
 	outline: 0;
 }
 
@@ -310,7 +336,7 @@ code {
     font: inherit;
     border-radius: 0.3em;
     padding: 0.5em 1em;
-    background-color: var(--color-neutral-light);
+    background-color: var(--color-main-light);
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -340,7 +366,7 @@ code {
    width: 100%;
     /*line-height: 3rem; */
    font: inherit;
-   background-color: var(--color-neutral-light);
+   background-color: var(--color-form-input);
    padding: 0.5em 1.5em;
    border-radius: 2em;
    border-width:0;
@@ -385,7 +411,7 @@ code {
 /*forms*/
 .form-select>select {
     padding: 0.5em 1em;
-    background-color: var(--color-neutral-light);
+    background-color: var(--color-main-light);
     border-width: 0;
     border-radius: 0.3em;
     cursor: pointer;
@@ -452,6 +478,215 @@ code {
 .toggle input:checked + label::after {
    transform:translateX(1em);
 }
+
+
+
+/*FOOTER*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+
+}
+
+.footer-distributed {
+  background-color: var(--color-main-medium);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: Newson Bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*Footer left*/
+.footer-distributed .footer-left {
+  width: 30%;
+}
+/*Footer links*/
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/*Footer center*/
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+.footer-distributed .footer-center i.Qiwen-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span{
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a{
+  color: #e0ac1c;
+  text-decoration: none;
+}
+
+/*Footer Right*/
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+ 
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+
+/*Browse List*/
+
+.browse_list {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: Newson Regular, sans-serif;
+  padding: 50px 50px 50px 50px;
+  margin-top: 50px;
+  font-size: 16px;
+
+  
+}
+.browse_list  h3 {
+ color: var(--color-main-medium);
+  
+}
+
+.browse_list .popularmodels-left,
+.browse_list .popularmodels-center,
+.browse_list .popularmodels-right,
+.browse_list .brand-left,
+.browse_list .brand-center,
+.browse_list .brand-right,
+.browse_list .bodystyle-left,
+.browse_list .bodystyle-center,
+.browse_list .bodystyle-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  color: #00AED9;
+}
+
+.browse_list .popularmodels-left li,
+.browse_list .popularmodels-center li,
+.browse_list .popularmodels-right li,
+.browse_list .brand-left li,
+.browse_list .brand-center li,
+.browse_list .brand-right li,
+.browse_list .bodystyle-left li,
+.browse_list .bodystyle-center li,
+.browse_list .bodystyle-right li {
+
+  line-height: 70px;
+  margin: 10px 10px;
+
+}
+
+.browse_list .popularmodels-left ul,
+.browse_list .popularmodels-center ul,
+.browse_list .popularmodels-right ul,
+.browse_list .brand-left ul,
+.browse_list .brand-center ul,
+.browse_list .brand-right ul,
+.browse_list .bodystyle-left ul,
+.browse_list .bodystyle-center ul,
+.browse_list .bodystyle-right ul {
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 

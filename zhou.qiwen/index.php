@@ -11,6 +11,8 @@ include_once "lib/php/functions.php";
    <?php include "parts/meta.php" ?>
 </head>
 <body>
+	<a href="top"></a>
+
    
    <?php include "parts/navbar.php" ?>
 
@@ -18,14 +20,15 @@ include_once "lib/php/functions.php";
 
    <div class="view-window" style="background-image:url(img/car_001.jpg)">
       <h2>FIND BEST OPTION</h2>
-         <h3>Get pre-qualified to see personalized financing terms on over 62,000 vehicles.</h3>
-      
+      <h3>Get pre-qualified to see personalized financing terms on over 62,000 vehicles.</h3>
    </div>
-   <div class="container">
-      <div class="card soft">
-         <h2>Welcome to the Store</h2>
-      </div>
-   </div>
+   
+   <?php include "parts/browse_list.php" ?>
+
+	<button class="button top_button"><a href="#top">TOP</a></button>
+	
+
+   <?php include "parts/footer.php" ?>
 
 </body>
 </html>
