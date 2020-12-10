@@ -10,7 +10,7 @@ function getRequires($props) {
 }
 
 
-function makeStatement($type) {
+function makeStatement($type,$params=[]) {
 
    switch($type) {
       case "products_all":
@@ -19,6 +19,9 @@ function makeStatement($type) {
             ORDER BY {$_GET['orderby']} {$_GET['orderby_direction']}
             LIMIT {$_GET['limit']}");
          break;
+
+
+
 
 
       case "product_by_id":
@@ -80,9 +83,87 @@ function makeStatement($type) {
 
          return MYSQLIQuery("SELECT *
             FROM `products`
-            WHERE `title` LIKE '%{$_GET['s']}%'
+            WHERE `name` LIKE '%{$_GET['s']}%'
             ORDER BY {$_GET['orderby']} {$_GET['orderby_direction']}
             LIMIT {$_GET['limit']}
+            ");
+         break;
+
+
+
+      case "product_insert":
+         return MYSQLIQuery("INSERT INTO
+            `products`
+            (
+               `name`,
+               `price`,
+               `category`,
+               `description`,
+               `miles`,
+               `image_other`,
+               `image_thumb`,
+               `make_model`,
+               `body_type`,
+               `year`,
+               `date_create`,
+               `date_modify`
+            )
+            VALUES
+            (
+               '{$params[0]}',
+               '{$params[1]}',
+               '{$params[2]}',
+               '{$params[3]}',
+               '{$params[4]}',
+               '{$params[5]}',
+               '{$params[6]}',
+               '{$params[7]}',
+               '{$params[8]}',
+               '{$params[9]}',
+               NOW(),
+               NOW()
+            )
+            ");
+         break;
+
+      case "product_update":
+         return MYSQLIQuery("UPDATE
+            `products`
+            SET
+               `name` = '{$params[0]}',
+               `price` = '{$params[1]}',
+               `category` = '{$params[2]}',
+               `description` = '{$params[3]}',
+               `miles` = '{$params[4]}',
+               `image_other` = '{$params[5]}',
+               `image_thumb` = '{$params[6]}',
+               `make_model` = '{$params[7]}',
+               `body_type` = '{$params[8]}',
+               `year` = '{$params[9]}'
+            WHERE `id` = {$params[10]}
+            ");
+         break;
+
+      case "product_delete":
+         return MYSQLIQuery("DELETE FROM
+            `products` WHERE `id` = {$params[0]}
+            ");
+         break;
+
+
+
+
+
+
+
+
+
+
+
+      case "products_admin_all":
+         return MYSQLIQuery("SELECT *
+            FROM `products`
+            ORDER BY `date_create` DESC
             ");
          break;
 

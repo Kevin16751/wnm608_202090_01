@@ -32,14 +32,14 @@ body {
 
 }
 
-.view-window h3 {
+.view-window>h3 {
 	position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 	font-family: Newson Extra Light, sans-serif;
   font-weight: lighter;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	color: white;
   padding: 1em;
   
@@ -153,53 +153,54 @@ span.badge:not(:empty)::before {
   content:'(';
 }
 
+.browse_list ul {
+    padding: 0;
+}
+
 
 
 @media (max-width:600px) {
+
+  .navbar>.display-flex {
+    display:block;
+  }
+
+
   h2 {
     font-size:1em;
   }
 
   h3 {
-    font-size: 1em;
+    margin-top: 38%;
   }
 
 
-.nav ul {
-  flex-direction: column;
-}
-.nav li {
-  margin:0;
-}
-.nav a {
-  display: block;
-}
+
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav li {
+    margin:0;
+  }
+  .nav a {
+    display: block;
+  }
 
 
-
-
-
-
-
-.browse_list .popularmodels-left,
-.browse_list .popularmodels-center,
-.browse_list .popularmodels-right,
-.browse_list .brand-left,
-.browse_list .brand-center,
-.browse_list .brand-right,
-.browse_list .bodystyle-left,
-.browse_list .bodystyle-center,
-.browse_list .bodystyle-right {
-  display: block;
-  width: 100%;
-  margin-bottom: 40px;
-  text-align: center;
-
-}
-
-
-
-
+  .browse_list .popularmodels-left,
+  .browse_list .popularmodels-center,
+  .browse_list .popularmodels-right,
+  .browse_list .brand-left,
+  .browse_list .brand-center,
+  .browse_list .brand-right,
+  .browse_list .bodystyle-left,
+  .browse_list .bodystyle-center,
+  .browse_list .bodystyle-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
 
 
   .footer-distributed .footer-left,
@@ -216,12 +217,6 @@ span.badge:not(:empty)::before {
 }
 
 }
-
-
-
-
-
-
 
 @media (max-height: 800px) {
   footer { position: static; }

@@ -29,11 +29,11 @@
 	<div class="footer-right">
 		<p class="footer-company-about"><span>About the company</span>We offer cars with the best quality in the whole market of San Francisco. </p>
 		<div class="footer-icons">
-			<a href="https://www.facebook.com/qw.zhou.9"><i class="Qiwen-facebook"><img src="img/icon/facebook.png" alt=""></i></a>
-			<a href="https://twitter.com/kkevin05746106"><i class="Qiwen-twitter"><img src="img/icon/twitter.png" alt=""></i></a>
-			<a href="https://www.instagram.com/zhouqiwen8101/"><i class="Qiwen-instagram"><img src="img/icon/instagram.png" alt=""></i></a>
-			<a href="https://www.linkedin.com/in/qiwen-zhou-b70899192/"><i class="Qiwen-linkdin"><img src="img/icon/linkdin.png" alt=""></i></a>
-			<a href="https://www.youtube.com/channel/UCbg2JHyPyqTvxCW4XA8FQ4Q?view_as=subscriber"><i class="Qiwen-youtube"><img src="img/icon/youtube.png" alt=""></i></a>
+			<a href="https://www.facebook.com/qw.zhou.9"><i class="Qiwen-facebook"><img src="img/icons/facebook.png" alt=""></i></a>
+			<a href="https://twitter.com/kkevin05746106"><i class="Qiwen-twitter"><img src="img/icons/twitter.png" alt=""></i></a>
+			<a href="https://www.instagram.com/zhouqiwen8101/"><i class="Qiwen-instagram"><img src="img/icons/instagram.png" alt=""></i></a>
+			<a href="https://www.linkedin.com/in/qiwen-zhou-b70899192/"><i class="Qiwen-linkdin"><img src="img/icons/linkdin.png" alt=""></i></a>
+			<a href="https://www.youtube.com/channel/UCbg2JHyPyqTvxCW4XA8FQ4Q?view_as=subscriber"><i class="Qiwen-youtube"><img src="img/icons/youtube.png" alt=""></i></a>
 		</div>
 
 	</div>

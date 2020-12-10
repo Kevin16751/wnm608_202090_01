@@ -19,12 +19,11 @@ $empty_product = (object)[
    "category"=>"car",
    "description"=>"Such a nice car.",
    "miles"=>"37325miles",
-   "image_main"=>"hondawhite_m.jpg",
-   "image_other"=>"hondawhite_m.jpg",
-   "image_thumb"=>"hondawhite_m.jpg",
+   "image_other"=>"img/hondawhite_m.jpg",
+   "image_thumb"=>"img/hondawhite_m.jpg",
    "make_model"=>"Honda",
    "body_type"=>"Sedan",
-   "year"=>"2020",
+   "year"=>"2020"
 
 ];
 
@@ -39,7 +38,6 @@ switch(@$_GET['crud']) {
          $_POST['product-category'],
          $_POST['product-description'],
          $_POST['product-miles'],
-         $_POST['product-image_main'],
          $_POST['product-image_other'],
          $_POST['product-image_thumb'],
          $_POST['product-make_model'],
@@ -60,7 +58,6 @@ switch(@$_GET['crud']) {
          $_POST['product-category'],
          $_POST['product-description'],
          $_POST['product-miles'],
-         $_POST['product-image_main'],
          $_POST['product-image_other'],
          $_POST['product-image_thumb'],
          $_POST['product-make_model'],
@@ -178,7 +175,7 @@ echo <<<HTML
                <input id="product-miles" name="product-miles" type="text" placeholder="Type product miles" class="form-input" value="$product->miles">
             </div>
             <div class="form-control">
-               <label for="product-make_model" class="form-label">Make&Modle</label>
+               <label for="product-make_model" class="form-label">Make&Model</label>
                <input id="product-make_model" name="product-make_model" type="text" placeholder="Type product make_model" class="form-input" value="$product->make_model">
             </div>
             <div class="form-control">

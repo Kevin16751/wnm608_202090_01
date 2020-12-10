@@ -21,11 +21,11 @@ function makeSortOptions() {
       ["price","DESC","Most Expensive"],
       ["price","ASC","Least Expensive"]
    ];
-   foreach($options as [$orderby,$direction,$title]) {
+   foreach($options as [$orderby,$direction,$name]) {
       echo "
       <option data-orderby='$orderby' data-direction='$direction'
       ".($_GET['orderby']==$orderby && $_GET['orderby_direction']==$direction ? "selected" : "").">
-      $title
+      $name
       </option>
       ";
    }
