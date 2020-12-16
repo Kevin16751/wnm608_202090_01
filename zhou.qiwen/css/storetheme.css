@@ -32,7 +32,7 @@ body {
 
 }
 
-.view-window>h3 {
+.view-window>p {
 	position: absolute;
   top: 50%;
   left: 50%;
@@ -166,12 +166,13 @@ span.badge:not(:empty)::before {
   }
 
 
-  h2 {
-    font-size:1em;
+  .view-window>h2 {
+    font-size:1.5em;
   }
 
-  h3 {
-    margin-top: 38%;
+  .view-window>p {
+    font-size:0.75em;
+    margin-top: 1%;
   }
 
 

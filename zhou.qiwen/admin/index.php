@@ -104,7 +104,7 @@ $productdata = $id=='new' ? '' : <<<HTML
       <h2 class="flex-stretch">$product->name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="img/icons/trash.svg" class="icon">
+            <img src="img/icons/trash.png" class="icon">
          </a>
       </div>
    </div>

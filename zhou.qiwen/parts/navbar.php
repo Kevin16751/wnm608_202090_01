@@ -12,7 +12,7 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="product_list.php">Search Cars</a></li>
             
-   			<li><a href="index.php">About</a></li>
+   			
             <li><a href="product_cart.php">
                <span>Cart</span>
                <span class="badge"><?= makeCartBadge() ?></span>

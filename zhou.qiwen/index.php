@@ -20,7 +20,7 @@ include_once "lib/php/functions.php";
    
          <div class="view-window" style="background-image:url(img/car_001.jpg)">
             <h2>FIND BEST OPTION</h2>
-            <h3>Get pre-qualified to see personalized financing terms on over 62,000 vehicles.</h3>
+            <p>Get pre-qualified to see personalized financing terms on over 62,000 vehicles.</p>
          </div>
      
     

@@ -78,22 +78,42 @@ $products = isset($result['error']) ? [] : $result;
             <form action="product_list.php" method="get">
                <?
                makeHiddenValues($_GET,[
-                  "category"=>"CAR",
+                  "category"=>"Sedan",
                   "t"=>"products_by_category"
                ]);
                ?>
 
-                <input type="submit" value="CAR" class="form-button">
+                <input type="submit" value="Sedan" class="form-button">
             </form>
             <form action="product_list.php" method="get">
                <?
                makeHiddenValues($_GET,[
-                  "category"=>"car",
+                  "category"=>"SUV",
                   "t"=>"products_by_category"
                ]);
                ?>
 
-               <input type="submit" value="CAR" class="form-button">
+               <input type="submit" value="SUV" class="form-button">
+            </form>
+            <form action="product_list.php" method="get">
+               <?
+               makeHiddenValues($_GET,[
+                  "category"=>"Hatchback",
+                  "t"=>"products_by_category"
+               ]);
+               ?>
+
+               <input type="submit" value="Hatchback" class="form-button">
+            </form>
+            <form action="product_list.php" method="get">
+               <?
+               makeHiddenValues($_GET,[
+                  "category"=>"Coupe",
+                  "t"=>"products_by_category"
+               ]);
+               ?>
+
+               <input type="submit" value="Coupe" class="form-button">
             </form>
          </div>
          <div class="flex-stretch"></div>

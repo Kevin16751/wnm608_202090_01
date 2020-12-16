@@ -71,7 +71,7 @@ code {
 .display-inline-flex { display: inline-flex; }
 .display-inline-block { display: inline-block;}
 
-.flex-strech { flex: 1 1 auto; }
+.flex-stretch { flex: 1 1 auto; }
 .flex-none {flex:none;}
 
 
@@ -102,7 +102,7 @@ code {
 		color: var(--color-white);
 		text-decoration: none;
 	}
-	.nav.crumbs ul
+	.nav.crumbs ul,
 	.nav.pills ul,
 	.nav.stretch ul,
 	.nav.flex ul {
@@ -458,7 +458,7 @@ code {
     display: inline-block;
     width: 2em;
     height: 1em;
-    background-color: var(--color-neutral-light);
+    background-color: var(--color-main-light);
     border: 0.1em solid var(--color-neutral-medium);
     border-radius: 1em;
     position: relative;
