@@ -9,7 +9,7 @@ include "../data/api.php";
 
 setDefault('orderby_direction','DESC');
 setDefault('orderby','date_create');
-setDefault('limit','13');
+setDefault('limit','14');
 $products = makeStatement("products_admin_all",[]);
 
 

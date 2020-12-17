@@ -9,7 +9,7 @@ setDefault('s','');
 setDefault('t','products_all');
 setDefault('orderby_direction','DESC');
 setDefault('orderby','date_create');
-setDefault('limit','13');
+setDefault('limit','14');
 
 
 
